@@ -107,7 +107,7 @@ async function downloadAndRename(video_url, time, title, desc, downloadedVideos,
     });
 
     process.stderr.on('data', (data) => {
-      console.error(`lux.exe 错误: ${data}`);
+      console.error(`lux.exe: ${data}`);
     });
 
     process.on('error', (err) => {
